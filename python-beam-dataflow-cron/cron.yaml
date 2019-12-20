@@ -1,0 +1,6 @@
+cron:
+- description: trigger dataflow test
+  url: /start-dataflow
+  schedule: every wednesday 10:00
+  target: default
+  timezone: America/Bogota

@@ -1,2 +1,1 @@
-# GCP_References
-a collection of useful code for GCP
+Reference to things in GCP
