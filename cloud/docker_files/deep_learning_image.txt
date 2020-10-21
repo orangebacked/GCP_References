@@ -1,0 +1,6 @@
+#to run the image:
+docker run -it $(ls /dev/nvidia* | xargs -I{} echo '--device={}') $(ls /usr/lib/*-linux-gnu/{libcuda,libnvidia}* | xargs -I{} echo '-v {}:{}:ro') -p 8888:8888 -v $(pwd):/srv gw000/keras-full
+
+## to copy files and folders to de container:
+
+docker cp altipal_data container_id:/srv/altipal_data
